@@ -1,0 +1,165 @@
+*,*::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: url("https://media.istockphoto.com/id/1201023091/vector/mortgage-concept-house-loan-or-money-investment-to-real-estate-property-money-investment.jpg?s=612x612&w=0&k=20&c=ntIFLpcadieEg7-NPP64KzoQdLmqW1f1UNJV6tTOX1g=");
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+      background-size: 65%;
+    background-attachment: fixed;
+    /* background : 75%; */
+}
+.container{
+    background-color: white;
+    /* border: 2px solid rgb(0, 141, 141); */
+    width: 500px;
+    border-radius: 10px;
+    margin: 0rem 2rem;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px;
+}
+h2{
+    text-align:center;
+    margin: 20px 0px;
+    font-size: 2.3rem;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    /* border: 2px solid red; */
+    padding: 0.4rem;
+}
+.input-box label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.input-box input{
+    font-size: larger;
+    padding: 4px 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{ 
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgb(235, 181, 46);
+    color: white;
+    transition: all 0.3s ease;
+    /* box-shadow: 2px 3px 4px rgb(55, 52 ,52); */
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.output-box{
+    display: flex;
+    flex-direction: column;
+    margin-top:15px;
+    gap: 1.4rem;
+}
+
+.output-box p{
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgb(55, 52 ,52);
+    font-weight: bold;
+    background: white;
+}
+.output-box span{
+    float: right;
+    word-wrap: break-word;
+    color: darkgreen;
+}
+@media screen and (max-width : 1350px){
+    body{
+        background:none;
+        /* background-color: bisque; */
+        background-color: blanchedalmond;
+        justify-content: center;
+        height: auto
+    }
+}
+
+@media screen and (max-width: 930px){
+    body{
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width : 480px){
+    .container{
+        width: 400x;
+    }
+    .output-box p{
+        font-size: 16px;
+        /* border-radius: 4px; */
+        padding: 8px;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    .input-box label{
+        font-size: 1.2rem;
+    }
+    button{ 
+        padding: 4px 8px;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .container{
+        width: 360px;
+    }
+    .output-box p{
+        font-size: 14px;
+        /* border-radius: 4px; */
+        padding: 8px;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    .input-box label{
+        font-size: 1rem;
+    }
+    button{ 
+        padding: 3px 6px;
+    }
+    .input-box input{
+        font-size: large;
+        padding: 3px 8px;
+    }
+
+}
+
+@media screen and (max-width : 330px){
+    .container{
+        width: 500px;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media screen and (max-width : 360px){
+    .container{
+        width: 280px;
+    }
+}
